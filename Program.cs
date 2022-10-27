@@ -1,14 +1,29 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
+//Array
 string[] cibiPreferiti = { "Pasta", "Cioccolato", "Pane", "Mandarini", "Fragole", "Peperoni", "Zucchine" };
 
+//Lunghezza array
 int cibiPreferitiLength = cibiPreferiti.Length;
-Console.WriteLine("La lunghezza della classifica è: " + cibiPreferitiLength);
+
+//Stampa lunghezza array
+Console.WriteLine("Lunghezza classifica: " + cibiPreferitiLength);
+
+//Stampa array
 Console.WriteLine("Classifica:");
-for (int i = 0; i < cibiPreferitiLength; i++)
-{
-    Console.WriteLine(i + 1 + ") " + cibiPreferiti[i]);
+
+//Stampa posizione in classifica
+for (int i = 0; i < cibiPreferitiLength; i++){
+
+    Console.WriteLine(i + 1 + ". " + cibiPreferiti[i]);
+
 }
-Console.WriteLine("Il mio cibo preferito è: " + cibiPreferiti[0]);
-Console.WriteLine("Il mio cibo meno preferito è: " + cibiPreferiti[cibiPreferitiLength - 1]);
+
+//Stampa cibo preferito
+Console.WriteLine("Cibo preferito: " + cibiPreferiti[1]);
+
+//Stampa cibo meno preferito
+Console.WriteLine("Cibo meno preferito: " + cibiPreferiti[cibiPreferitiLength - 1]);
+
+//Bonus
