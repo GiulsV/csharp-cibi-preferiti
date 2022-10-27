@@ -58,25 +58,35 @@
 
 //Snack3.Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
-Console.WriteLine("Snack3");
-int[] number = new int[10];
-int sum = 0;
-for (int i = 0; i < number.Length; i++){
-    Console.WriteLine("Inserisci un numero:");
-    number[i] = Convert.ToInt32(Console.ReadLine());
-    sum = sum + number[i];
-}
-Console.WriteLine("La somma è: " + sum);
+//Console.WriteLine("Snack3");
+//int[] number = new int[10];
+//int sum = 0;
+//for (int i = 0; i < number.Length; i++){
+//    Console.WriteLine("Inserisci un numero:");
+//    number[i] = Convert.ToInt32(Console.ReadLine());
+//    sum = sum + number[i];
+//}
+//Console.WriteLine("La somma è: " + sum);
 
 
-//Snack4. Calcola la somma e la media dei numeri da 2 a 10.
-Console.WriteLine("Snack4");
-int[] numeri = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-int somma = 0;
-double media;
-for (int i = 0; i < numeri.Length; i++){
-    somma = somma + numeri[i];
+////Snack4. Calcola la somma e la media dei numeri da 2 a 10.
+//Console.WriteLine("Snack4");
+//int[] numeri = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//int somma = 0;
+//double media;
+//for (int i = 0; i < numeri.Length; i++){
+//    somma = somma + numeri[i];
+//}
+//media = somma / numeri.Length;
+//Console.WriteLine("Somma: " + somma);
+//Console.WriteLine("Media: " + media);
+
+//Snack5.Il software chiede all’utente di inserire un numero. Se il numero inserito è pari,stampa il numero, se è dispari, stampa il numero successivo.
+
+Console.WriteLine("Inserisci un numero");
+int numeroUtente = Convert.ToInt32(Console.ReadLine());
+if (numeroUtente % 2 == 0){
+    Console.WriteLine("Il numero inserito è pari: " + numeroUtente);
+}else{
+    Console.WriteLine("Il numero inserito è dispari, " + (numeroUtente + 1) + " è il numero successivo");
 }
-media = somma / numeri.Length;
-Console.WriteLine("Somma: " + somma);
-Console.WriteLine("Media: " + media);
