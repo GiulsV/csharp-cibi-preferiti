@@ -21,7 +21,10 @@ Console.WriteLine("Cibo meno preferito: " + cibiPreferiti[cibiPreferitiLength - 
 //Bonus
     //caso array pari
 if (cibiPreferitiLength % 2 == 0){
-    Console.WriteLine("Cibi di mezzo: " + cibiPreferiti[cibiPreferitiLength / 2 - 1] + " e " + cibiPreferiti[cibiPreferitiLength / 2]);
+    int medianaSuperiore = cibiPreferitiLength / 2;
+    int medianaInferiore = medianaSuperiore - 1;
+    Console.WriteLine("Cibi di mezzo: " + cibiPreferiti[medianaSuperiore] + " e " + cibiPreferiti[medianaInferiore]);
 }else{
-    Console.WriteLine("Cibo di mezzo: " + cibiPreferiti[(cibiPreferitiLength - 1) / 2]);
+    int mediana = cibiPreferitiLength / 2;
+    Console.WriteLine("Cibo di mezzo: " + cibiPreferiti[mediana]);
 }
