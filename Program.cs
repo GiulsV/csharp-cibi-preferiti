@@ -28,29 +28,55 @@
 
 //Esercizio pomeriggio
 //Snack1. L’utente inserisce due numeri in successione. Il software stampa il maggiore.
-Console.WriteLine("Snack1");
-Console.WriteLine("Inserisci primo numero");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Snack1");
+//Console.WriteLine("Inserisci primo numero");
+//int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Inserisci secondo numero");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Inserisci secondo numero");
+//int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-if (firstNumber > secondNumber){
-    Console.WriteLine("Il maggiore è: " + firstNumber);
-}else{
-    Console.WriteLine("Il maggiore è: " + secondNumber);
+//if (firstNumber > secondNumber){
+//    Console.WriteLine("Il maggiore è: " + firstNumber);
+//}else{
+//    Console.WriteLine("Il maggiore è: " + secondNumber);
+//}
+
+////Snack2.L’utente inserisce due parole in successione. Il software stampa prima la parola più corta, poi la parola più lunga.
+//Console.WriteLine("Snack2");
+//Console.WriteLine("Inserisci prima parola");
+//string firstWord = Console.ReadLine();
+
+//Console.WriteLine("Inserisci seconda parola");
+//string secondWord = Console.ReadLine();
+
+//if (firstWord.Length < secondWord.Length){
+//    Console.WriteLine("Parola più corta " + firstWord + ", più lunga " + secondWord);
+//}else{
+//    Console.WriteLine("Parola più corta " + secondWord + ", più lunga " + firstWord);
+//}
+
+
+//Snack3.Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
+
+Console.WriteLine("Snack3");
+int[] number = new int[10];
+int sum = 0;
+for (int i = 0; i < number.Length; i++){
+    Console.WriteLine("Inserisci un numero:");
+    number[i] = Convert.ToInt32(Console.ReadLine());
+    sum = sum + number[i];
 }
+Console.WriteLine("La somma è: " + sum);
 
-//Snack2.L’utente inserisce due parole in successione. Il software stampa prima la parola più corta, poi la parola più lunga.
-Console.WriteLine("Snack2");
-Console.WriteLine("Inserisci prima parola");
-string firstWord = Console.ReadLine();
 
-Console.WriteLine("Inserisci seconda parola");
-string secondWord = Console.ReadLine();
-
-if (firstWord.Length < secondWord.Length){
-    Console.WriteLine("Parola più corta " + firstWord + ", più lunga " + secondWord);
-}else{
-    Console.WriteLine("Parola più corta " + secondWord + ", più lunga " + firstWord);
+//Snack4. Calcola la somma e la media dei numeri da 2 a 10.
+Console.WriteLine("Snack4");
+int[] numeri = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int somma = 0;
+double media;
+for (int i = 0; i < numeri.Length; i++){
+    somma = somma + numeri[i];
 }
+media = somma / numeri.Length;
+Console.WriteLine("Somma: " + somma);
+Console.WriteLine("Media: " + media);
