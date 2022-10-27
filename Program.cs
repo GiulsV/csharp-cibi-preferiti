@@ -2,7 +2,7 @@
 //Console.WriteLine("Hello, World!");
 
 //Array
-string[] cibiPreferiti = { "Pasta", "Cioccolato", "Pane", "Mandarini", "Fragole", "Peperoni", "Zucchine" };
+string[] cibiPreferiti = { "Cioccolato", "Pasta", "Pane", "Mandarini", "Fragole", "Peperoni", "Zucchine" };
 
 //Salva e stampa lunghezza array
 int cibiPreferitiLength = cibiPreferiti.Length;
@@ -15,7 +15,7 @@ for (int i = 0; i < cibiPreferitiLength; i++){
 }
 
 //Stampa cibo preferito/meno preferito
-Console.WriteLine("Cibo preferito: " + cibiPreferiti[1]);
+Console.WriteLine("Cibo preferito: " + cibiPreferiti[0]);
 Console.WriteLine("Cibo meno preferito: " + cibiPreferiti[cibiPreferitiLength - 1]);
 
 //Bonus
